@@ -21,7 +21,22 @@ const App = () => {
           ),
       
       }} />
+      <Tab.Screen name='Pesanan' component={Pesanan} options={{
+          tabBarLabel: 'Pesanan',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="text-box" color={color} size={26} />
+          ),
       
+      }} />
+     
+      <Tab.Screen name='Notifikasi' component={Notifikasi} options={{
+          tabBarLabel: 'Notifikasi',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="bell" color={color} size={26} />
+          ),
+      
+      }} />
+
       <Tab.Screen name='Profil' component={Profil} options={{
           tabBarLabel: 'Profil',
           tabBarIcon: ({ color }) => (
