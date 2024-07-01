@@ -6,7 +6,7 @@ import Profil from './screens/Profil'
 import { NavigationContainer } from '@react-navigation/native'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Notifikasi from './screens/Notifikasi'
-import Pesanan from './screens/Pesanan'
+
 
 const Tab = createBottomTabNavigator();
 
@@ -18,13 +18,6 @@ const App = () => {
           tabBarLabel: 'Beranda',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
-          ),
-      
-      }} />
-      <Tab.Screen name='Pesanan' component={Pesanan} options={{
-          tabBarLabel: 'Pesanan',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="text-box" color={color} size={26} />
           ),
       
       }} />
